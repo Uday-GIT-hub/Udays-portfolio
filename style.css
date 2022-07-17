@@ -1,0 +1,399 @@
+
+body{
+  font :'Roboto';
+}
+.parallax {
+  /* The image used */
+  
+
+  /* Set a specific height */
+  
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.center-div{
+  display : flex;
+  flex-direction : row;
+  width : 100%;
+  justify-content : center;
+  align-items : center;
+}
+.center-div img{
+  width : 10%;
+}
+.hello-there{
+  color: white;
+  font-size : 50px;
+}
+/* .center-div img{
+  width : 35%;
+} */
+.banner1{
+  background-image: url("./images/abstract-background-with-red-lines.jpg");
+  height : 100vh;
+  display : flex;
+  align-items : center;
+  justify-content : center;
+}
+.banner2{
+  background-image: url("./images/coding.jpg");
+  height: 300px; 
+}
+.banner3{
+  background-image: url("./images/yellow.jpg");
+  height: 300px; 
+}
+.banner4{
+  background-image: url("./images/blackdrop.jpg");
+  height: 300px; 
+}
+.banner5{
+  background-image: url("./images/coding.jpg");
+  height: 300px; 
+}
+
+.introduction{
+  display : flex;
+  flex-direction: row;
+  width : 100%;
+  padding : 40px;
+}
+.intro-left {
+  width : 30%;
+  display : flex;
+  align-items: center;
+  justify-content : center;
+}
+.intro-left img{
+  width : 70%;
+  border-radius : 50%;
+  box-shadow: 5px 10px 18px rgb(78, 78, 78);
+}
+.intro-right{
+  width : 70%;
+  display : flex;
+  flex-direction:column;
+  justify-content: center;
+  padding-left : 20px;
+  padding-right : 20px;
+}
+.about-myself{
+  text-align: center;
+}
+.heading{
+  font-size: 30px;
+  font-weight:600;
+  padding-bottom : 15px;
+  letter-spacing: 1px;
+}
+.intro-text{
+  padding-top : 20px;
+  letter-spacing: 1px;
+  line-height : 1.7rem;
+}
+.education{
+  padding : 60px;
+  background :#222831;
+  display : flex;
+  flex-direction:column;
+}
+.education-heading{
+  color : white;
+  font-size: 30px;
+  font-weight:600;
+  margin-bottom : 15px;
+  letter-spacing: 1px;
+  text-align: center;
+}
+.accordion-button{
+  background-color: #222831 !important;
+  color : white !important;
+}
+.accordion-button:not(.collapsed) {
+  color: #F05454 !important;
+  background-color: none !important;
+  box-shadow: inset 0 -1px 0 rgb(0 0 0 / 13%);
+}
+.accordion-button::after {
+  flex-shrink: 0;
+  width: 1.25rem;
+  height: 1.25rem;
+  margin-left: auto;
+  content: "";
+  background-image: url("./images/down-arrow.png") !important;
+  background-repeat: no-repeat;
+  background-size: 1.25rem;
+  transition: transform .2s ease-in-out;
+}
+.accordion-button:not(.collapsed)::after {
+  background-image: url("./images/color-arrow.png") !important;
+  transform: rotate(-180deg);
+}
+.accordion-body{
+  background-color :   #DDDDDD !important;
+}
+
+.skills{
+  width : 100%;
+  display : flex;
+  flex-direction: column;
+  align-items: center;
+  padding : 60px;
+}
+.skills-row{
+  display : flex;
+  width : 100%;
+}
+.col{
+  display : flex;
+  flex-direction  :column;
+  align-items : center;
+  padding-bottom: 25px;
+  width : 30%;
+}
+.col img{
+  width : 20%;
+  padding-bottom: 10px;
+}
+
+.col span{
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.projects{
+  width : 100%;
+  padding : 40px;
+  display : flex;
+  flex-direction : column;
+  background-color :#222831;
+  align-items: center;
+  color :#DDDDDD;
+}
+.projects span{
+  padding-bottom : 30px !important;
+  font-size: 30px;
+  font-weight:600;
+  
+  letter-spacing: 1px;
+}
+
+.project-row{
+  width : 100%;
+  display : flex;
+  flex-direction: row;
+  padding-bottom : 20px;
+ 
+  align-items : center;
+}
+.project-col{
+  width : 50%;
+  display : flex;
+  flex-direction : column; 
+  align-items : center
+}
+
+a{
+  display : flex;
+  flex-direction : column; 
+  align-items : center
+}
+
+.project-col img{
+  width : 80%;
+  border-radius : 10px;
+  cursor: pointer;
+  
+  
+}
+
+.project-col img:hover{
+  transition: all 0.3 sease ;
+  border :3px solid #F05454 ;
+}
+.project-col span{
+  color :#DDDDDD;
+  font-size: 20px;
+  padding-top : 10px; 
+}
+
+.footer{
+  width : 100%;
+  padding : 30px;
+  display : flex;
+  flex-direction : row;
+  justify-content : space-evenly;
+  background :#222831;
+  color :#DDDDDD;
+}
+
+.footer-col{
+  
+  display : flex;
+  flex-direction : column;
+}
+
+.footer-row{
+  display : flex;
+
+}
+.sub-heading {
+  font-size : 20px;
+  padding-bottom : 15px;
+  color :#F05454;
+}
+.footer-row i{
+  font-size : 30px;
+  padding-right : 10px;
+  color : white;
+  cursor: pointer;
+}
+.footer-row i:hover{
+  color :#F05454;
+}
+
+
+@media only screen and (max-width : 778px)
+{
+  .intro-left{
+    width : 40%;
+  }
+  .intro-left img{
+    width : 80%;
+  }
+  .intro-right{
+    width : 60%;
+  }
+}
+
+@media only screen and (max-width : 600px)
+{
+  .introduction{
+    display : flex;
+    flex-direction: column;
+    padding : 30px;
+  }
+  .intro-right{
+    width : 100%;
+  }
+  .intro-left{
+    width : 100%;
+    padding-bottom : 20px;
+  }
+  .intro-left img{
+    width : 60%;
+  }
+  .hello-there{
+    font-size : 30px;
+  }
+  .heading{
+    font-size: 22px !important;
+  }
+  .intro-text{
+    padding-top : 0px;
+    text-align : center;
+  }
+  .education{
+    padding : 30px;
+  }
+  .education-heading{
+    font-size: 22px;
+  }
+  .skills{
+    padding : 30px;
+  }
+  .col{
+    display : flex;
+    flex-direction  :column;
+    align-items : center;
+    padding-top: 10px;
+    width : 30%;
+  }
+  
+  .col img
+  {
+    width : 20%;
+    padding-bottom: 10px;
+  }
+  .col span{
+    font-size: 14px;
+    font-weight: bold;
+  }
+  .projects{
+    padding : 20px;
+  }
+  .projects span{
+    padding-bottom : 30px !important;
+    font-size: 17px;
+    letter-spacing: 1px;
+  }
+  .project-col{
+    width : 100%;
+  }
+  .project-row{
+    flex-direction: column;
+    padding-bottom : 10px;
+  }
+  .footer{
+    width : 100%;
+    padding : 20px;
+    display : flex;
+    flex-direction : column;
+    align-items : center;
+  }
+  .footer-col
+  {
+    display : flex;
+    flex-direction : column;
+    align-items : center;
+    padding-bottom : 20px;
+  }
+  
+  .banner1{
+    height : 200px;
+  }
+  .banner2{
+    height  :200px;
+  }
+  .banner3{
+    height  :200px;
+  }
+  .banner4{
+    height  :200px;
+  }
+  .banner5{
+    height  :200px;
+  }
+}
+
+@media only screen and (max-width : 400px)
+{
+  .introduction{
+    padding : 15px;
+  }
+  .footer{
+    padding : 15px;
+  }
+  .heading{
+    font-size: 20px !important;
+  }
+  .intro-text{
+    padding-top : 0px;
+    text-align : center;
+  }
+  .education{
+    padding : 20px;
+  }
+  .education-heading{
+    font-size: 18px;
+  }
+  .col img{
+    width : 30%;
+    padding-bottom: 10px;
+  }
+}
